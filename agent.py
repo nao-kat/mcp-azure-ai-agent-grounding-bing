@@ -30,8 +30,8 @@ bing = BingGroundingTool(
 
 with project_client:
     agent = project_client.agents.create_agent(
-        model="gpt-4.1",  # 必要に応じて他のモデルに変更可能
-        name="MyGroundedAgent",  # 任意のエージェント名
+        model="gpt-4.1",  # 利用するモデルに変更
+        name="MyGroundedAgent",  # 利用するエージェントの名前
         instructions="You are a helpful assistant. Use the tools provided to answer the user's questions. Be sure to cite your sources.",
         tools=bing.definitions + [
             {
@@ -50,7 +50,7 @@ with project_client:
     message = project_client.agents.messages.create(
         thread_id=thread.id,
         role="user",
-        content="最新の天気予報や交通情報、注目ニュースを教えてください。信頼できるメディアから3件、URL付きで教えてください。"
+        content="最新の天気予報や交通情報、注目ニュースを教えてください。信頼できるメディアから3件、URL付きで教えてください。" #適宜変更する
     )
     print(f"Created message, message ID: {message.id}")
 
