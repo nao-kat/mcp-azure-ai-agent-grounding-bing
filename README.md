@@ -38,18 +38,6 @@ To use this repository, you need the following environment:
 Create a `.env` file at the root of your project and include the following content:
 
 ```env
-# Azure subscription and resource info
-# AZURE_SUBSCRIPTION_ID=<your-subscription-id>
-# AZURE_RESOURCE_GROUP=<your-resource-group>
-
-# Foundry settings
-FOUNDRY_RESOURCE_NAME=<your-foundry-resource-name>
-PROJECT_NAME=<your-project-name>
-MODEL_DEPLOYMENT_NAME=<your-model-deployment-name e.g. gpt-4.1>
-
-# Bing Grounding settings
-BING_CONNECTION_NAME=<your-bing-connection-name>
-
 # Required for MCP connection
 AZURE_PROJECT_ENDPOINT=YOUR_AZURE_PROJECT_ENDPOINT_HERE
 AZURE_CONNECTION_ID=YOUR_AZURE_CONNECTION_ID_HERE
