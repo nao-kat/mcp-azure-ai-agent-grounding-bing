@@ -1,6 +1,6 @@
 # mcp-azure-ai-agent-grounding-bing
 
-# Azure AI Agent on Foundry via MCP + Bing Grounding
+# How to create an agent within Azure AI Foundry that includes both MCP and Grounding with Bing as integrated tools.
 
 ## 🎯 Overview
 
