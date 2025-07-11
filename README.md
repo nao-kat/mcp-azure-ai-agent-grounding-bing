@@ -39,7 +39,21 @@ Create a `.env` file at the root of your project and include the following conte
 
 ```env
 # Required for MCP connection
-AZURE_PROJECT_ENDPOINT=YOUR_AZURE_PROJECT_ENDPOINT_HERE
-AZURE_CONNECTION_ID=YOUR_AZURE_CONNECTION_ID_HERE
+AZURE_PROJECT_ENDPOINT=YOUR_AZURE_PROJECT_ENDPOINT
+BING_CONNECTION_ID=YOUR_BING_CONNECTION_ID
+AZURE_AGENT_ID = YOUR_AGENT_ID
 ```
 
+---
+
+## 🧩 Scripts Overview
+
+This repository contains two primary Python scripts:
+
+- **`create-agent.py`**  
+  This script is used to **create a new agent** in an existing Azure AI Foundry project. It registers the agent with selected tools such as Bing Search, Code Interpreter, etc.
+
+- **`get-agent.py`**  
+  This script is used to **send requests to an already created agent**. It connects to the existing agent using its ID and allows interactions via the MCP interface.
+
+Be sure to correctly configure your `.env` file before running either script.

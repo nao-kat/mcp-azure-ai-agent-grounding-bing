@@ -1,3 +1,4 @@
+#  This script is used to **create a new agent** in an existing Azure AI Foundry project. It registers the agent with selected tools such as Bing Search, Code Interpreter, etc.
 import time
 import json
 import os
@@ -13,7 +14,7 @@ load_dotenv()
 
 # 環境変数から設定を取得
 PROJECT_ENDPOINT = os.getenv("AZURE_PROJECT_ENDPOINT")
-CONNECTION_ID = os.getenv("AZURE_CONNECTION_ID")
+CONNECTION_ID = os.getenv("BING_CONNECTION_ID")
 
 project_client = AIProjectClient(
     endpoint=PROJECT_ENDPOINT,
